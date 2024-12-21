@@ -1,0 +1,47 @@
+{
+    "threshold": 25,
+    "rules": [
+        {
+            "id": 101,
+            "target": "ARGS",
+            "pattern": "\\b(union|select|insert|update|delete|drop|alter|create|replace|rename|truncate|exec)\\b",
+            "action": "deny",
+            "status": 403,
+            "log": true,
+            "msg": "SQL Injection Attempt Detected",
+            "anomaly_score": 5
+        },
+        {
+            "id": 102,
+            "target": "ARGS",
+            "pattern": "<script.*?>|<.*?javascript:|on\\w+=[\"'].*?[\"']",
+            "action": "deny",
+            "status": 403,
+            "log": true,
+            "msg": "XSS Attack Detected",
+            "anomaly_score": 3
+        },
+        {
+            "id": 103,
+            "phase": 2,
+            "target": "ARGS",
+            "pattern": "\\.(php|asp|jsp|exe|sh|bat|py|pl)\\b",
+            "action": "deny",
+            "status": 403,
+            "log": true,
+            "msg": "Blocked File Upload Attempt",
+            "anomaly_score": 15
+        },
+        {
+            "id": 104,
+            "phase": 2,
+            "target": "ARGS",
+            "pattern": "(&&|\\|\\||;|\\$\\(|`|\\|)",
+            "action": "deny",
+            "status": 403,
+            "log": true,
+            "msg": "Command Injection Attempt Detected",
+            "anomaly_score": 20
+        }
+    ]
+}

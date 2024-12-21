@@ -1,0 +1,24 @@
+2024-12-21 13:13:39 | Rule 101 | Client 127.0.0.1:56858 | Action: deny | Request: GET /?input=SELECT+*+FROM+users+WHERE+id=1;%3Cscript%3Ealert('XSS')%3C/script%3E HTTP/1.1
+User-Agent: Mozilla/5.0 (Windows NT; Windows NT 10.0; en-US) WindowsPowerShell/5.1.22621.4391
+Host: localhost:8080
+Connection: Keep-Alive
+2024-12-21 13:13:39 | Rule 102 | Client 127.0.0.1:56858 | Action: deny | Request: GET /?input=SELECT+*+FROM+users+WHERE+id=1;%3Cscript%3Ealert('XSS')%3C/script%3E HTTP/1.1
+User-Agent: Mozilla/5.0 (Windows NT; Windows NT 10.0; en-US) WindowsPowerShell/5.1.22621.4391
+Host: localhost:8080
+Connection: Keep-Alive
+2024-12-21 13:13:39 | Rule 104 | Client 127.0.0.1:56858 | Action: deny | Request: GET /?input=SELECT+*+FROM+users+WHERE+id=1;%3Cscript%3Ealert('XSS')%3C/script%3E HTTP/1.1
+User-Agent: Mozilla/5.0 (Windows NT; Windows NT 10.0; en-US) WindowsPowerShell/5.1.22621.4391
+Host: localhost:8080
+Connection: Keep-Alive
+2024-12-21 14:22:27 | Rule 101 | Client 127.0.0.1:57304 | Action: deny | Request: GET /?input=SELECT+*+FROM+users+WHERE+id=1;%3Cscript%3Ealert('XSS')%3C/script%3E HTTP/1.1
+User-Agent: Mozilla/5.0 (Windows NT; Windows NT 10.0; en-US) WindowsPowerShell/5.1.22621.4391
+Host: localhost:8080
+Connection: Keep-Alive
+2024-12-21 14:22:27 | Rule 102 | Client 127.0.0.1:57304 | Action: deny | Request: GET /?input=SELECT+*+FROM+users+WHERE+id=1;%3Cscript%3Ealert('XSS')%3C/script%3E HTTP/1.1
+User-Agent: Mozilla/5.0 (Windows NT; Windows NT 10.0; en-US) WindowsPowerShell/5.1.22621.4391
+Host: localhost:8080
+Connection: Keep-Alive
+2024-12-21 14:22:27 | Rule 104 | Client 127.0.0.1:57304 | Action: deny | Request: GET /?input=SELECT+*+FROM+users+WHERE+id=1;%3Cscript%3Ealert('XSS')%3C/script%3E HTTP/1.1
+User-Agent: Mozilla/5.0 (Windows NT; Windows NT 10.0; en-US) WindowsPowerShell/5.1.22621.4391
+Host: localhost:8080
+Connection: Keep-Alive
